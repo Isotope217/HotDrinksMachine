@@ -1,9 +1,11 @@
-﻿namespace HotDrinksMachine
+﻿using System.Collections.Generic;
+
+namespace HotDrinksMachine
 {
     /// <summary>
     /// The DrinkEngine manages the process of making a selected drink. 
     /// It delegates out the work of creating the chosen drink to the 
-    /// DrinkFactory and then returns a formatted recipe string to the client.
+    /// DrinkFactory and then returns the recipe to the client.
     /// </summary>
     public class DrinkEngine
     {
@@ -14,11 +16,11 @@
             Context.Engine = this;
         }
 
-        public string Create(string drinkType)
+        public List<string> Create(string drinkType)
         {
             Drink drink = Context.CreateDrink(drinkType, Context);
 
-            return string.Join(", ", drink.Recipe());
+            return drink.Recipe();
 
         }
     }

@@ -12,7 +12,9 @@ namespace HotDrinksMachine
             {
 
                 DrinkEngine engine = new DrinkEngine();
-                ResultLabel.Text = engine.Create(DrinkRBList.SelectedValue);
+
+                ActionsRpt.DataSource = engine.Create(DrinkRBList.SelectedValue);
+                ActionsRpt.DataBind();
 
             }
         }
