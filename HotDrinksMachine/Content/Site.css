@@ -2,6 +2,7 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    color: #fff;
 }
 
 /* Wrapping element */
@@ -18,14 +19,60 @@ textarea {
     max-width: 280px;
 }
 
+.jumbotron {
+    background-color: #333;
+}
+
+legend {
+    color: #fff;
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {
         margin-top: 20px;
+        min-height: 810px;
     }
 
     .body-content {
         padding: 0;
     }
 }
+
+.drink-label{
+    font-size: 20px;
+}
+
+.drink-selection .fa-5 {
+    font-size: 12em;
+}
+
+.drink-selection .coffee {
+    color: #6F4E37;
+}
+
+.drink-selection .lemon-tea {
+    color: #FAFA33;
+}
+
+.drink-selection .chocolate {
+    color: #D2691E;
+}
+
+.drink-selection .coffee:hover,
+.drink-selection .lemon-tea:hover,
+.drink-selection .chocolate:hover {
+    color: #337ab7;
+}
+
+.action {
+    font-size:18px;
+}
+
+#successMessage .alert,
+#errorMessage .alert{
+    font-size: 18px;
+}
+
+
+
