@@ -50,9 +50,15 @@
                 </div>
             </div>
         </div>
+        <main role="main" class="container">
+          <div class="jumbotron">
+              <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+          </div>
+        </main>
+
         <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
+            
             <hr />
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - My Hot Drinks Machine Application</p>
